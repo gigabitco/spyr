@@ -29,6 +29,7 @@ set firewall filter protect-RE term BGP-DENY from destination-port bgp
 set firewall filter protect-RE term BGP-DENY then discard
 set firewall filter protect-RE term SNMP-ALLOWED from source-address 162.249.33.128/27
 set firewall filter protect-RE term SNMP-ALLOWED from source-address 172.16.31.0/24
+set firewall filter protect-RE term SNMP-ALLOWED from source-address 23.135.176.25
 set firewall filter protect-RE term SNMP-ALLOWED from destination-port snmp
 set firewall filter protect-RE term SNMP-ALLOWED from destination-port syslog
 set firewall filter protect-RE term SNMP-ALLOWED then accept
