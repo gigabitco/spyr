@@ -1,6 +1,7 @@
 # SPYR re-Filter Implementation
 # 4-29-21
 #
+set interfaces lo0 unit 0 family inet address 127.0.0.1/32
 set firewall filter protect-RE interface-specific
 set firewall filter protect-RE term ssh from source-address 162.249.33.128/27
 set firewall filter protect-RE term ssh from source-address 23.135.176.25/32
